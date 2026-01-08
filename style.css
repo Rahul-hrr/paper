@@ -6,19 +6,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 .glass-card {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    padding: 40px;
+    padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: center;
-    width: 400px;
+    width: 90%;
+    max-width: 500px;
 }
 input {
     width: 100%;
+    box-sizing: border-box;
     padding: 12px;
     margin: 20px 0;
     border-radius: 8px;
@@ -34,12 +36,13 @@ input {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+    font-weight: bold;
 }
 .btn-next:disabled { background: #475569; }
 .option-btn {
     display: block;
     width: 100%;
-    padding: 15px;
+    padding: 12px;
     margin: 10px 0;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -47,5 +50,10 @@ input {
     border-radius: 10px;
     cursor: pointer;
     text-align: left;
+    transition: 0.3s;
+}
+.option-btn:hover:not([disabled]) {
+    background: rgba(255, 255, 255, 0.15);
 }
 .score-display { font-size: 50px; font-weight: bold; margin: 20px 0; color: #3b82f6; }
+.quiz-info { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; color: #94a3b8; }
