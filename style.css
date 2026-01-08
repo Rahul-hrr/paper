@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    background: #0f172a;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    width: 400px;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.btn-start, .btn-next {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+}
+.btn-next:disabled { background: #475569; }
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+.score-display { font-size: 50px; font-weight: bold; margin: 20px 0; color: #3b82f6; }

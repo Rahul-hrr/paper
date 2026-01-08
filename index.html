@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Tools Pro Exam - Rahul Singh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div id="auth-card" class="glass-card">
+            <h1>IT Tools Online Exam</h1>
+            <p>KODVIDYA ACADEMY OF COMPUTER TECHNOLOGY</p>
+            <input type="text" id="student-name" placeholder="Apna Pura Naam Likhein">
+            <button class="btn-start" onclick="startExam()">Start Test</button>
+        </div>
+
+        <div id="quiz-card" class="glass-card" style="display:none;">
+            <div class="quiz-info">
+                <span id="timer">Time: 120s</span>
+                <span id="q-progress">Q 1/5</span>
+            </div>
+            <div id="question-box"></div>
+            <button id="next-btn" class="btn-next" onclick="handleNext()" disabled>Next Question</button>
+        </div>
+
+        <div id="result-card" class="glass-card" style="display:none;">
+            <h2>Test Completed</h2>
+            <div class="score-display"><span id="score-num">0</span>/100</div>
+            <p id="save-status">Saving to Google Drive...</p>
+            <button class="btn-start" onclick="location.reload()">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
